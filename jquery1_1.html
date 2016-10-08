@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$(".level1 > a").click(function(){
+				$(this).addClass("current") //给当前元素添加一个current样式
+				.next().show()              //下一个元素显示
+				.parent().siblings().children("a").removeClass("current")
+											//父元素的同辈元素的子元素<a>移除current样式
+				.next().hide();             //它们的下一个元素隐藏
+				return false;
+			});
+			
+			$("li").show().unbind("click");
+		});
+		</script>
+		<style>
+			.menu{
+				font-family: "microsoft yahei";
+				list-style: none;
+			}
+			
+			.level2{
+				list-style: none;
+			}
+			
+			a{
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul class="menu">
+				<li class="level1">
+					<a href="">突击</a>
+					<ul class="level2">
+						<li><a href="">士兵76</a></li>
+						<li><a href="">死神</a></li>
+						<li><a href="">麦克雷</a></li>
+						<li><a href="">猎空</a></li>
+					</ul>
+				</li>
+				<li class="level1">
+					<a href="">重装</a>
+					<ul class="level2">
+						<li><a href="">DVA</a></li>
+						<li><a href="">莱因哈特</a></li>
+						<li><a href="">毛妹</a></li>
+						<li><a href="">路霸</a></li>
+					</ul>
+				</li>
+				<li class="level1">
+					<a href="">防御</a>
+					<ul class="level2">
+						<li><a href="">小美</a></li>
+						<li><a href="">黑百合</a></li>
+						<li><a href="">半藏</a></li>
+						<li><a href="">堡垒</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

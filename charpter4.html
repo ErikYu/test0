@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title>char4Test</title>
+		<script type="text/javascript">
+			function change(whichPic){
+				var source=whichPic.getAttribute("href");
+				var para=document.getElementById("photoZa");
+				para.setAttribute("src", source);
+			}
+			function elem(){
+				var bodyElement=document.getElementsByTagName("body")[0];
+				alert (bodyElement.childNodes.length);
+				alert (bodyElement.nodeType);
+			}
+			
+		</script>
+	</head>
+	<body>
+		<h1>Drawing change</h1>
+		<ul>
+			<a href="img/site_photoexa.jpg">first</a>
+			<a href="img/site_photoqe.jpg" onclick="change(this); return false;">second</a>
+		</ul>
+		<img src="img/site_photoref.jpg" id="photoZa" onclick="elem()"/>
+	</body>
+</html>

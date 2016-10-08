@@ -1,0 +1,86 @@
+#titleBar{
+	width: 1100px;
+	height: 90px;
+	background-color: rgb(195,195,195);
+	margin: -10px auto auto auto;
+	font-family: "century gothic";
+	font-size: 60px;
+	color: white;
+}
+#guideBar{
+	width: 1100px;
+	height: 35px;
+	font-family: "century gothic";
+	margin-bottom: 10px;
+}
+#guideBar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#guideBar ul li{
+	float: left;
+	width: 150px;
+	margin: auto auto auto 0px;
+}
+#guideBar ul li a{
+	text-decoration: none;
+	color: rgb(195,195,195);
+	font-size: 25px;
+}
+#menuBar{
+	width: 200px;
+	height: 1000px;
+	background-image: linear-gradient(to bottom,lightgrey,white);
+	float: left;
+}
+#menuBar #menuBarTitle{
+	font-family: "microsoft yahei";
+	font-size: 35px;
+	height: 40px;
+	text-align: center;
+}
+#menuBar #menuBarContent{
+	font-family: "microsoft yahei";
+}
+#menuBar #menuBarContent h4 a{
+	text-decoration: none;
+	color: black;
+}
+#contentZone{
+	width: 900px;
+	height: 1000px;
+	float: left;
+}
+#contentZone #contentZone1{
+	margin-top: 0px;
+	margin-left: 15px;
+	border-bottom: 2px solid rgb(195,195,195);
+	border-top: 1px solid rgb(195,195,195);
+	text-align: center;
+	font-family: "century gothic";
+}
+#contentZone #contentZone2{
+	border-bottom: 2px solid rgb(195,195,195);
+	margin-left:15px ;
+	margin-top: 0px;
+	font-family: arial;
+	width: 910px;
+	height: auto;
+	padding-bottom: 10px;
+	/*border: dashed;*/
+}
+#contentZone #contentZone3{
+	margin-left: 15px;
+	margin-top: 0px;
+	
+}
+#footBar{
+	width: 1100px;
+	background-color: ligh;
+	float: left;
+}
+#menuBar ul {
+	list-style: none;
+	margin: -30px auto auto -20px;
+}

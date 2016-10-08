@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				font-family: courier;
+				font-size: 20px;
+			}
+			fieldset{
+				width: 400px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Heat Source</legend>
+				Temp. :
+				<input type="text" name="temp." />
+				<select name="tempUnit">
+					<option value="ssd">℃</option>
+					<option value="kew" selected="">K</option>
+					<option value="hsd">F</option>
+				</select>
+				<br />
+				Flow. :
+				<input type="text" name="flow." />
+				<br />
+				<textarea name="advice" rows="5" cols="30" id="ta"></textarea>
+				<input type="submit" />
+				<button onclick="asd()">ahaha</button>
+			</fieldset>
+			<input type="color" />
+			<br />
+			<input type="date" />
+			<br />
+			<input type="datetime" />
+			<br />
+			<input type="datetime-local" />
+			<br />
+			<input type="email" />
+			<br />
+			<input type="month" />
+			<br />
+			<input type="color" />
+			<br />
+			<input type="color" />
+			<br />
+			<input type="color" />
+			<br />
+		</form>
+		<script>
+			function asd(){
+				var txt=document.getElementById("ta").value;
+				alert(txt);
+			}
+			
+			var oBoolean = new Boolean(false);
+			alert(oBoolean && true);
+		</script>
+	</body>
+
+</html>
